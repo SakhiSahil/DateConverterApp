@@ -10,7 +10,7 @@
 
 ## 🚀 Download
 
-👉 [**Download Latest Version (v1.3)**](https://github.com/SakhiSahil/DateConverterApp/blob/master/app/release/app-release.apk)
+👉 [**Download Latest Version (v1.3)**](https://github.com/SakhiSahil/DateConverterApp/raw/refs/heads/main/app/release/app-release.apk)
 
 ---
 
