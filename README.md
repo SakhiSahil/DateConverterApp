@@ -7,7 +7,7 @@
 
 
 ## 📱 Features
-- View **Jalali (Shamsi)**, **Gregorian (Miladi)**, and **Islamic Hijri (قمری)** dates side by side
+- View **Jalali (Shamsi)**, **Gregorian (Miladi)**, and **Islamic Hijri (قمری), the week day in persian and english** and dates side by side
 - Clean and minimal **User Interface**
 - **Dark Mode** and **Light Mode** support
 - Useful for students, teachers, developers, religious scholars, and anyone needing multi-calendar conversion.
