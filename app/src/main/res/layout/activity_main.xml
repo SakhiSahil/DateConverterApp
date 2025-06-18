@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/cardview_shadow_start_color"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <!-- Show Week Day -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/weekday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="شنبه"
+                    android:textAlignment="center"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/grweekday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Saturday"
+                    android:textAlignment="center"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    <!-- Shamsi (Jalali) Date Picker -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="20dp">
+
+        <!-- ONE vertical container inside the card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- First section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">  <!-- margin separates it from the next -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="هجری شمسی – Jalali Shamsi"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <!-- Second section -->
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Day NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/sh_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_max="31"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="15"
+                    app:np_wheelItemCount="3" />
+
+                <!-- Month NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/sh_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="12"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="6"
+                    app:np_wheelItemCount="3" />
+
+                <!-- Year NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/sh_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_formatter="%d"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="1510"
+                    app:np_min="1310"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="1404"
+                    app:np_wheelItemCount="3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- Gregorian Date Picker -->
+        <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_weight="3"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- ONE vertical container inside the card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- First section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">  <!-- margin separates it from the next -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="میلادی - Gregorian"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- Second section -->
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Day NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/gr_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="31"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="15"
+                    app:np_wheelItemCount="3" />
+
+                <!-- Month NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/gr_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="12"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="6"
+                    app:np_wheelItemCount="3" />
+
+                <!-- year NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/gr_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_formatter="%d"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="2130"
+                    app:np_min="1910"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="2025"
+                    app:np_wheelItemCount="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- Hijri Shamsi -->
+        <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_weight="3"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- ONE vertical container inside the card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- First section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="هجری قمری - Islamic Hijri"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">  <!-- margin separates it from the next -->
+            </LinearLayout>
+
+            <!-- Second section -->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Day NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/hj_day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="31"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="27"
+                    app:np_wheelItemCount="3" />
+
+                <!-- Month NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/hj_month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="12"
+                    app:np_min="1"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="11"
+                    app:np_wheelItemCount="3" />
+
+                <!-- Year NumberPicker -->
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/hj_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:np_dividerThickness="0dp"
+                    app:np_formatter="%d"
+                    app:np_itemSpacing="0dp"
+                    app:np_max="1755"
+                    app:np_min="1310"
+                    app:np_selectedTextColor="?attr/customTextColor"
+                    app:np_textColor="?android:textColorPrimary"
+                    app:np_textSize="16sp"
+                    app:np_value="1446"
+                    app:np_wheelItemCount="3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

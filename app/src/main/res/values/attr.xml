@@ -1,0 +1,7 @@
+<!-- res/values/attrs.xml -->
+<resources>
+    <attr name="customTextColor" format="color"/>
+    <declare-styleable name="CustomNumberPicker">
+        <attr name="selectedTextBackground" format="color|reference"/>
+    </declare-styleable>
+</resources>
