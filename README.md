@@ -1,2 +1,43 @@
-# DateConverterApp
-Simple Android app to convert dates between Jalali (Shamsi), Gregorian (Miladi), and Islamic Hijri (قمری) calendars. Includes dark and light modes. Useful for students, developers, and scholars.
+# Date Converter App
+
+**Date Converter App** is a simple yet powerful Android application that allows you to easily convert dates between **Jalali (Shamsi)**, **Gregorian (Miladi)**, and **Islamic Hijri (Ghamari)** calendars — all on one screen!
+
+## 📱 Features
+- View **Jalali (Shamsi)**, **Gregorian (Miladi)**, and **Islamic Hijri (قمری)** dates side by side
+- Clean and minimal **User Interface**
+- **Dark Mode** and **Light Mode** support
+- Useful for students, teachers, developers, religious scholars, and anyone needing multi-calendar conversion.
+
+## 🚀 Download
+
+👉 [**Download Latest Version (v1.3)**](https://github.com/SakhiSahil/DateConverterApp/blob/master/app/release/app-release.apk)
+
+---
+
+## 🖼️ Screenshots
+
+### 🌑 Dark Mode
+![Dark Mode](https://github.com/SakhiSahil/DateConverterApp/blob/master/screenshot/dark-mode.png)
+
+### ☀️ Light Mode
+![Light Mode](https://github.com/SakhiSahil/DateConverterApp/blob/master/screenshot/light-mode.png)
+
+---
+
+## ℹ️ App Info
+
+| Name             | Details                    |
+| ---------------- | -------------------------- |
+| **Version**      | 1.3                        |
+| **Organization** | DEVLYFE Inc.               |
+| **Developer**    | Ghulam Sakhi SAHIL         |
+
+## 📂 Repository
+https://github.com/SakhiSahil/DateConverterApp
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
+
+Enjoy using Date Converter App! ⭐️
