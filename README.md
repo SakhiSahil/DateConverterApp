@@ -17,10 +17,10 @@
 ## 🖼️ Screenshots
 
 ### 🌑 Dark Mode
-![Dark Mode](https://github.com/SakhiSahil/DateConverterApp/blob/master/screenshot/dark-mode.png)
+![Dark Mode](https://raw.githubusercontent.com/SakhiSahil/DateConverterApp/master/screenshot/dark-mode.png)
 
 ### ☀️ Light Mode
-![Light Mode](https://github.com/SakhiSahil/DateConverterApp/blob/master/screenshot/light-mode.png)
+![Light Mode](https://raw.githubusercontent.com/SakhiSahil/DateConverterApp/master/screenshot/light-mode.png)
 
 ---
 
