@@ -2,7 +2,7 @@
 
 **Date Converter App** is a simple yet powerful Android application that allows you to easily convert dates between **Jalali (Shamsi)**, **Gregorian (Miladi)**, and **Islamic Hijri (Ghamari)** calendars — all on one screen!
 
-### Just Scroll the source date to convert
+### <span style="color: orange;">Just Scroll the source date to convert</span>
 
 
 ## 📱 Features
